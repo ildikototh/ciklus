@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="hatultesztelo();">Futtatás</button>
+    <div id="ciklus"></div>
+            <script>
+                function hatultesztelo() {
+                    //Hátultesztelő ciklus
+                    //Jellemzője, hogy egyszer biztosan lefut tartalma, és utána ellenőrzi a feltételt
+                    /*
+                    do
+                    {
+                        // futtatandó kód
+                    }
+                    while (feltétel igaz);
+                    */
+            
+                    var cel = 20;
+                    var ertek = 1;
+                    do {
+                        ciklus.textContent += " " + ertek;
+                        ertek++;
+                    }
+                    while (ertek <= cel);
+                }
+
+            </script>
+</body>
+
+</html>
