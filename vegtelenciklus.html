@@ -10,7 +10,12 @@
     <div id="eredmeny"></div>
     <script>
         var i = 0;
-        while(true) {
+          while(i<10) {
+            i++;
+            console.log(i);
+            document.getElementById('eredmeny').innerHTML +=i + " ";
+        }
+        /*while(true) {
             i++;
             console.log(i);
             document.getElementById('eredmeny').innerHTML +=i + " ";
@@ -18,7 +23,7 @@
              {
                  break;
              }
-        }
+        }*/
     </script>
 </body>
 </html>
