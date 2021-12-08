@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <button onclick="eloltesztelo();">Futtatás</button>
     <div id="eredmeny"></div>
     <script>
-    //Elöltesztelő ciklus
-    //Jellemzője, hogy ha nem teljesül a feltétel, akkor nem  fut le a tartalma
-    /*
-    while (feltétel igaz)
-    {
-        futtatandó kód
-    }
-    */
-    function eloltesztelo() {
-    //ADDIG üsd a vasat, AMÍG meleg
-    var homerseklet = "meleg";
-    var szamlalo = 0;
-    var szoveg = "";
-    while (homerseklet == "meleg")
-    {
-        szamlalo++;
-
-        if (szamlalo == 19)
+        //Elöltesztelő ciklus
+        //Jellemzője, hogy ha nem teljesül a feltétel, akkor nem  fut le a tartalma
+        /*
+        while (feltétel igaz)
         {
-            homerseklet = "hideg";
+            futtatandó kód
         }
-        szoveg += "Szamlalo " + szamlalo +  " , homerseklet:" + homerseklet + "<br/>";
-    }
-    document.getElementById('eredmeny').innerHTML  = szoveg;
-    }
+        */
+        function eloltesztelo() {
+            //ADDIG üsd a vasat, AMÍG meleg
+            var homerseklet = "meleg";
+            var szamlalo = 50;
+            var szoveg = "";
+            while (homerseklet == "meleg") {
+                szamlalo--;
+
+                if (szamlalo == 25) {
+                    homerseklet = "hideg";
+                }
+                szoveg += "Szamlalo " + szamlalo + " , homerseklet:" + homerseklet + "<br/>";
+            }
+            document.getElementById('eredmeny').innerHTML = szoveg;
+        }
     </script>
 </body>
+
 </html>
