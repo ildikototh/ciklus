@@ -19,11 +19,15 @@
             if (szam === 0) {
                 document.getElementById("eredmeny").innerHTML = "0!=" + eredmeny;
             } else 
-            {
-                for (i=1;i<=szam; i++)
-                {
-                    eredmeny *= i;
+            {   let eredetiszam = szam;
+                while (eredetiszam>0) {
+                    eredmeny *= eredetiszam;
+                    eredetiszam--;
                 }
+                // for (i=1;i<=szam; i++)
+                // {
+                //     eredmeny *= i;
+                // }
                 document.getElementById("eredmeny").innerHTML = szam + "! =  " + eredmeny;
 
             }
