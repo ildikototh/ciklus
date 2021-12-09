@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="eredmeny"></div>
+    <script>
+        var i = 0;
+        var szoveg="";
+        while(i<=100) {
+            
+            szoveg = ((i % 3)? "" : "Fizz" )  + ((i % 5)? "" : "Buzz" ); 
+
+            console.log(szoveg ? szoveg : i);
+           i++;
+        }
+        /*  a fenti kilepesi feltelel szebben:
+        while(i<10) {
+            i++;
+            console.log(i);
+            document.getElementById('eredmeny').innerHTML +=i + " ";
+        }
+        */
+    </script>
+</body>
+</html>
